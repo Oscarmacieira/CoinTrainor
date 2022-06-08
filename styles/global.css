@@ -1,0 +1,41 @@
+/* @font-face {
+  font-family: "Best Choice Demo";
+  src: url(./Fonts/BestChoiceDemo-Regular.otf);
+} */
+
+:root {
+  --border-color: #f7f7f7;
+  --dialog-background: #101010;
+
+  --menu-background: #101010;
+  --menu-border-color: #ffffff;
+  --menu-font-color: #f7f7f7;
+  --menu-selected-background: #606060;
+}
+
+* {
+  box-sizing: border-box;
+  color: whitesmoke;
+}
+
+body {
+  background-color: #101010;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: "VT323", monospace;
+}
+
+.game-container {
+  position: relative;
+  width: 352px;
+  height: 198px;
+  margin: 0 auto;
+  outline: 1px solid white;
+
+  transform: scale(3) translateY(50%);
+}
+
+.game-container canvas {
+  image-rendering: pixelated;
+}
